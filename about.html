@@ -27,18 +27,54 @@
             </h1>
     </marquee>
 
-    <section>
-        <div>A movie</div>
-        <div>B movie</div>
-        <div>C movie</div>
-        <div>D movie</div>
+    <section class="Tier-A horror">
+            <div>A movie</div>
+            <div>B movie</div>
+            <div>C movie</div>
+            <div>D movie</div>
     </section>
 
-    <section>section2</section>
+    <section class="Tier-A funny">
+            <div>E movie</div>
+            <div>F movie</div>
+            <div>G movie</div>
+            <div>H movie</div>
+    </section>
 
     <footer>
         <button class="button">GO</button>
     </footer>
+
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end fixed-bottom">
+        <button style="margin:5px;" onclick="topFunction()" class="btn btn-primary me-md-2" id="myBtn" title="Go to top"> ^ </button>
+    </div>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        var mybutton = document.getElementById("myBtn");
+        
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
 
 </body>
 
