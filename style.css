@@ -1,10 +1,19 @@
 body{
+    background: #52085a;
     font-family: Helvetica Neue, Helvetica, Arial;
     margin: 0;
     padding: 0;
     }
+
+marquee{
+    background: #000;
+    color: white;
+}
+
 header{
-    background: rgb(0, 0, 0);
+    background: #52085a;
+    color: black;
+    font-size: large;
     padding: 20px 10px;
 }
 
@@ -15,9 +24,13 @@ ul{
 }
 
 li{
-    color: white;
-    margin-right: 20px;
+    color: rgb(0, 0, 0);
+    margin-right: 50px;
     display: inline-block;
+}
+
+li:hover{
+    background: white;
 }
 
 section{
@@ -49,9 +62,7 @@ section.Tier-A.funny div{
 a{
     text-decoration: none;
 }
-li:hover{
-    background: white;
-}
+
 footer{
     background: black;
     padding: 50px;
